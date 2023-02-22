@@ -1,7 +1,13 @@
 package com.ri.projet_ri.models;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Data;
+
 import java.util.List;
 
+//@JsonIgnoreProperties(ignoreUnknown = true)
+@Data
 public class Article {
       String identifiantArticle;
       String urlArticle;
@@ -14,7 +20,7 @@ public class Article {
       String auteurArticle;
       String datePublicationArticle;
       String dateMiseJourArticle;
-      String videosArticle;
+      List<String> videosArticle;
       int nombreLikesArticle;
       int nombreLecturesArticle;
       int nombreCommentairesArticle;

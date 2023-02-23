@@ -2,9 +2,8 @@ import sys
 import os
 
 workingDirectory = os.getcwd()
-print('Number of Arguments:' , len(sys.argv), 'arguments.')
+print('Number of Arguments:' , len(sys.argv), 'arguments')
 print('Argument List:',str(sys.argv))
-
 
 
 def addition():

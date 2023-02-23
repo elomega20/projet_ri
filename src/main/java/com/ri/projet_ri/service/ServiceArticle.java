@@ -3,7 +3,6 @@ package com.ri.projet_ri.service;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ri.projet_ri.models.Article;
-import com.ri.projet_ri.models.ModelTest;
 import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
@@ -23,7 +22,7 @@ public class ServiceArticle {
         return Optional.of(articles);
     }
 
-    public ModelTest getExecPython(){
+    /*public ModelTest getExecPython(){
         String concat = null;
 
         try {
@@ -51,6 +50,6 @@ public class ServiceArticle {
         modelTest.setChaine(concat);
 
         return modelTest;
-    }
+    }*/
 
 }

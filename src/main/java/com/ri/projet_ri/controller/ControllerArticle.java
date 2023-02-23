@@ -1,7 +1,6 @@
 package com.ri.projet_ri.controller;
 
 import com.ri.projet_ri.models.Article;
-import com.ri.projet_ri.models.ModelTest;
 import com.ri.projet_ri.service.ServiceArticle;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -24,8 +23,8 @@ public class ControllerArticle {
                 .map(articles -> new ResponseEntity<>(articles, HttpStatus.OK))
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
-    @GetMapping("test-python")
+   /* @GetMapping("test-python")
     public ResponseEntity<ModelTest> getExecPython(){
         return new  ResponseEntity<>(serviceArticle.getExecPython(),HttpStatus.OK);
-    }
+    }*/
 }

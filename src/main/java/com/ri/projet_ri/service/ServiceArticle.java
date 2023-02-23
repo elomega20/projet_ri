@@ -35,7 +35,7 @@ public class ServiceArticle {
 
             String lines = null;
             while ((lines=reader.readLine()) != null){
-                concat += lines+"\n";
+                concat += lines;
                 System.out.println("lines "+lines);
             }
 
